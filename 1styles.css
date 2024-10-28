@@ -1,0 +1,145 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #150101;
+    background-image: url(peakpx.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar .store-locator a {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.hero {
+    background: url('path/to/your/iphone-image.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero .pricing p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.hero .btn-know-more {
+    background-color: #0071e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.offers {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+}
+/* Image Slider Container */
+.image-slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden; /* Hide overflow to create a slider effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider Container */
+.slider-container {
+    display: flex;
+    transition: transform 0.4s ease-in-out; /* Smooth sliding effect */
+}
+
+/* Slider Images */
+.slider-image {
+    min-width: 100%;
+    height: auto;
+    display: none; /* Hide all images by default */
+}
+
+.slider-image.active {
+    display: block; /* Show only the active image */
+}
+
+/* Arrow Buttons */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* Container for Centered Image */
+.centered-image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 200px; /* Full height of the viewport */
+    width: 200px;
+    background-color: #000; /* Optional: Background color */
+}
+
+/* Centered Image Styling */
+.centered-image {
+    max-width: 80%; /* Responsive width */
+    max-height: 80%; /* Responsive height */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Drop shadow for effect */
+}
